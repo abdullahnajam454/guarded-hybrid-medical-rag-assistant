@@ -1,0 +1,12 @@
+
+import core
+
+flow main
+  $question = await user said something
+
+  $is_medical = await CheckMedicalTopicAction(question=$question)
+
+  if $is_medical
+    bot say "Your medical question is being processed."
+  else
+    bot say "I'm a medical assistant. I can only help with health-related questions."

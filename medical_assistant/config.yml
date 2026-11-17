@@ -1,0 +1,9 @@
+
+colang_version: "2.x"
+
+models:
+  - type: main
+    engine: ollama
+    model: llama3.2
+    parameters:
+      base_url: "http://localhost:11434/v1"
